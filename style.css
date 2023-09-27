@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+/*Header*/
+header{
+    background-color: purple;
+    padding-bottom: 2.5em;
+}
+
+header h1{
+    margin: 0;
+    padding: 1em;
+}
+
+header ul{
+    list-style: none;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+}
+
+header ul a{
+    text-decoration: none;
+}
+
+header ul li{
+    display: inline;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 black;
+    background-color: rgb(199, 44, 199);
+    color: black;
+}
+
+header img{
+    width: 50%;
+    /*NEED TO FIND A WAY TO STICK BORDER TO BOTTOM OF HEADER*/
+}
+
+/*Projects*/
+#projects #box{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#projects button{
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    border-style: none;
+    background-color: rgb(199, 44, 199);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#projects button:hover{
+    opacity: 1;
+}

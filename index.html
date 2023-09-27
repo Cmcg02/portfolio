@@ -3,7 +3,7 @@
     <head>
 
         <title> Title of the page </title>
-        <link rel="stylesheet" type="text/css" href="Name of css Doc"> </link>
+        <link rel="stylesheet" type="text/css" href="style.css"> </link>
 
     </head>
 
@@ -17,29 +17,56 @@
                 <a href=""><li>Projects</li></a>
                 <a href=""><li>Skills</li></a>
             </ul>
+            <!--Banner for the bottom of the header-->
         </header>
 
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p>Lots of writing will go here!</p>
+                <p>Hi! I'm Callam, a softwere engineer from Manchester. </p>
                 <img src="" alt="headshot of Callam McGaughey">
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
-                <dl>
-                    <dt>Mixed Messages:</dt>
-                    <dd>A website that will generate a random sentence when a button is pressed</dd>
-                    <dt>Reddit Client:</dt>
-                    <dd></dd>
-                    <dt>E-Commerce App (REST API):</dt>
-                    <dd></dd>
-                    <dt>E-Commerce App (Client):</dt>
-                    <dt>Open-Ended PERN App:</dt>
-                    <dd></dd>
-                </dl>
-                <!--make an arrow either side that will hide the others and reviel the next-->
+                <div id="box">
+                <button id="leftButton">&larr;</button>
+
+                <div id="project1">
+                    <h3>Mixed Messages:</h3>
+                    <p>
+                        A website that will generate a random sentence when a button is pressed<br>
+                        It will generate a none, verb, adjective, and sometimes an adverb, from different arrays<br>
+                        It will then concatinate these into a string to form a new random sentence
+                    </p>
+                </div>
+
+                <div id="project2" style="display: none;">
+                    <h3>Reddit Client:</h3>
+                    <p>
+                    </p>
+                </div>
+
+                <div id="project3" style="display: none;">
+                    <h3>E-Commerce App (REST API):</h3>
+                    <p>
+                    </p>
+                </div>
+
+                <div id="project4" style="display: none;">
+                    <h3>E-Commerce App (Client):</h3>
+                    <p>
+                    </p>
+                </div>
+
+                <div id="project5" style="display: none;">
+                    <h3>Open-Ended PERN App:</h3>
+                    <p>
+                    </p>
+                </div>
+
+                <button id="rightButton">&rarr;</button>
+                </div>
             </section>
 
             <section id="skills">
