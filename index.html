@@ -4,10 +4,11 @@
 
         <title> Title of the page </title>
         <link rel="stylesheet" type="text/css" href="style.css"> </link>
-
+        <script src="script.js"></script>
     </head>
 
     <body>
+        <img src="media/headerBackground3.png" alt="" id="headerImg">
         <header>
             <h1>
                 Callam McGaughey
@@ -16,58 +17,75 @@
                 <a href=""><li>About</li></a>
                 <a href=""><li>Projects</li></a>
                 <a href=""><li>Skills</li></a>
-                <a href="#contact"><li>Contact</li></a>
+                <a href=""><li>Contact</li></a>
 
             </ul>
-            <!--Banner for the bottom of the header-->
         </header>
+        
 
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hi! I'm Callam, a softwere engineer from Manchester</p>
-                <img src="" alt="headshot of Callam McGaughey">
+                <p>
+                    Hi! I'm Callam, a softwere engineer from Manchester.
+                    I'm currently studying at Codecademy as part of the 
+                    IT Career switch programme. But I am much more than 
+                    a softwear developer in training; since a young age 
+                    I have competed in martial arts, representing my 
+                    county and country at home and abroad. I played 
+                    rugby union on the Lancashire county team for 3 years.
+                    Wanting to share the opportunities I've had I set out to achieve
+                    a level 3 qualification in Personal Training. Becoming
+                    a private coach before organising and running a brand
+                    new programme within a well known gym. This programme
+                    took complete beginners and introduced them into the
+                    world of combat sports with the opportunity to comete at the end.
+                </p>
             </section>
+            <img src="media/IMG_E9425.JPG" alt="headshot of Callam McGaughey" id="headshot">
 
             <section id="projects">
                 <h2>Projects</h2>
                 <div id="box">
-                <button id="leftButton">&larr;</button>
+                 <button onclick="changeProject(-1)">&larr;</button>
 
-                <div id="project1">
+                 <div id="project1">
                     <h3>Mixed Messages:</h3>
                     <p>
                         A website that will generate a random sentence when a button is pressed<br>
                         It will generate a none, verb, adjective, and sometimes an adverb, from different arrays<br>
                         It will then concatinate these into a string to form a new random sentence
                     </p>
-                </div>
+                 </div>
 
-                <div id="project2" style="display: none;">
+                 <div id="project2" style="display: none;">
                     <h3>Reddit Client:</h3>
                     <p>
+                        An aplication that works on mobile phones, tablets and PCs which will allow<br>
+                        users to view and search posts and comments. The applicaition has smooth animations<br>
+                        and transitions, a cohesive design and includes a README file.
                     </p>
-                </div>
+                 </div>
 
-                <div id="project3" style="display: none;">
-                    <h3>E-Commerce App (REST API):</h3>
+                 <div id="project3" style="display: none;">
+                    <h3>E-Commerce App:</h3>
                     <p>
+                        An E-commerce application where users can register an account, sign in<br>
+                        and search through items that are for sale. They will also be able to add<br>
+                        items to their carts and purchase items.
                     </p>
-                </div>
+                 </div>
 
-                <div id="project4" style="display: none;">
-                    <h3>E-Commerce App (Client):</h3>
+                 <div id="project4" style="display: none;">
+                    <h3>Personal Project:</h3>
                     <p>
+                        __________<br>
+                        __________<br>
+                        __________
                     </p>
-                </div>
+                 </div>
 
-                <div id="project5" style="display: none;">
-                    <h3>Open-Ended PERN App:</h3>
-                    <p>
-                    </p>
-                </div>
-
-                <button id="rightButton">&rarr;</button>
+                 <button onclick="changeProject(1)">&rarr;</button>
                 </div>
             </section>
 
@@ -77,13 +95,6 @@
             </section>
         </main>
 
-        <footer id="contact">
-
-            <ul>
-                <li>Email: <a href="mailto: callammcgaughey02@icloud.com">callammcgaughey02@icloud.com</a></li>
-                <li>Phone: <a href="tel: 07869410580">07869410580</a></li>
-            </ul>
-        </footer>
     </body>
 
 </html> 
