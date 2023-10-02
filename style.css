@@ -103,10 +103,15 @@ main section{
     align-self: flex-start;
 }
 
+#about h2{
+    margin-bottom: 0;
+}
+
 #about p{
     line-height: 1.5em;
     letter-spacing: 0.7px;
     width: 60%;
+    margin-top: 1em;
 }
 
 #about p span{
@@ -150,6 +155,7 @@ main section{
 
 #projects #box div{
     width: 60%;
+    line-height: 1.5em;
 }
 
 #projects button{
@@ -169,3 +175,58 @@ main section{
 }
 
 /*Skills*/
+#skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#skills ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin-left: 0;
+}
+
+#skills li{
+    width: 20%;
+    height: 1ems;
+    text-align: center;
+}
+
+#skills li img{
+    height: 5rem;
+}
+
+/*Footer*/
+footer{
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: rgb(80, 80, 252);
+    padding-bottom: 2em;
+}
+
+footer div a{
+    position:fixed;
+    color: white;
+    bottom: 1.5em;
+    text-align: center;
+}
+
+footer div #email{
+    left:15%;
+}
+
+footer div #social{
+    right: 15%;
+}
+
+footer div #phone{
+    right:40%;
+    left: 40%;
+}
