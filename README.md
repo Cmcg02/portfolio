@@ -1,5 +1,4 @@
 # portfolio
-===========
 Read Me
 ---------
 This website was built as part of the full-stack developmer path within codecademy. 
