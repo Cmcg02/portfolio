@@ -194,6 +194,7 @@ main section{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 #skills ul{
@@ -201,44 +202,33 @@ main section{
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     width: 80%;
     margin-left: 0;
 }
 
 #skills li{
-    width: 20%;
-    height: 1ems;
     text-align: center;
 }
 
 #skills li img{
-    height: 5rem;
+    max-height: 3em;
 }
 
 /*Footer*/
 footer{
-    display: grid;
     box-sizing: border-box;
-    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
-    height: 4em;
+    height: 6em;
     background-color:  rgb(80, 80, 252);
+    color: white;
 }
-footer h2{
-    grid-column: 1 / span4;
-    grid-row: 1;
-    margin: 0;
+footer span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-footer #phone{
-    grid-column: 3;
-    grid-row: 2;
-}
-footer #email{
-    grid-column: 4;
-    grid-row: 2;
-}
 footer a{
     color: white;
-    text-align: center;
 }
